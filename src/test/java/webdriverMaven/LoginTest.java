@@ -1,5 +1,6 @@
 package webdriverMaven;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterSuite;
@@ -19,7 +20,7 @@ public class LoginTest
 	public void doLogin()
 	{
 		driver.get("http://www.gmail.com");
-//		driver.findElement(By.id("Email")).se
+		driver.findElement(By.id("Email")).sendKeys("divyashk5@gmail.com");
 	}
 	@AfterSuite
 	public void tearDown()
